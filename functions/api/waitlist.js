@@ -36,7 +36,7 @@ export async function onRequestPost({ request, env }) {
 
   if (!env.GHL_WEBHOOK_URL) return json({ ok: false, error: FRIENDLY_ERROR }, 503);
 
-  // Exactly the keys the GoHighLevel workflow is mapped to.
+  // The keys the GoHighLevel workflow is mapped to, plus ip and user_agent as consent proof.
   const payload = {
     first_name: first,
     last_name: last,
@@ -49,6 +49,8 @@ export async function onRequestPost({ request, env }) {
     form_version: str(d.form_version, 60),
     sms_disclosure: sms ? str(d.sms_disclosure, 1000) || null : null,
     email_disclosure: str(d.email_disclosure, 1000) || null,
+    ip: request.headers.get('cf-connecting-ip') || null,
+    user_agent: str(request.headers.get('user-agent') || '', 300) || null,
   };
 
   try {
