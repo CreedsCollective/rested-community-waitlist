@@ -28,6 +28,7 @@ h1,h2,h3,p,blockquote,li,div,span,a{text-wrap-style:pretty}header a{white-space:
 @media (max-width:1100px){.v112-smiley{left:-6px !important; top:-26px !important}}
 
 
+section[id],[id^="v4-"]{scroll-margin-top:86px}
 details summary{list-style:none;cursor:pointer}
 details summary::-webkit-details-marker{display:none}
 details[open] .v4-plus{transform:rotate(45deg)}
@@ -43,32 +44,34 @@ details[open] .v4-plus{transform:rotate(45deg)}
 .ic-smiley{-webkit-mask-image:url("assets/icons/smiley.png");mask-image:url("assets/icons/smiley.png")}
 .ic-sparkle{-webkit-mask-image:url("assets/icons/sparkle.png");mask-image:url("assets/icons/sparkle.png")}
 .ic-star{-webkit-mask-image:url("assets/icons/star.png");mask-image:url("assets/icons/star.png")}
-html{scroll-behavior:smooth}#v4-signup{scroll-margin-top:24px}
+html{scroll-behavior:smooth}#v4-signup{scroll-margin-top:110px}
 #mobile-menu[hidden]{display:none}
 </style>
 </head>
 <body>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute;"><filter id="v11-rough" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="2.8" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></svg>
 
-<div style="font-family:'Inter',sans-serif; color:#1A1D24; background:#FFFFFF; overflow:hidden;">
-
 <!-- ═══ NAV ═══ -->
-<header style="background:#FFFFFF; border-bottom:1.5px solid #1A1D24;">
+<header style="position:sticky; top:0; z-index:50; font-family:'Inter',sans-serif; color:#1A1D24; background:#FFFFFF; border-bottom:1.5px solid #1A1D24;">
 <nav style="max-width:1320px; margin:0 auto; padding:18px 32px; display:flex; flex-wrap:nowrap; align-items:center; justify-content:space-between; gap:16px 28px;">
 <a href="#v4-top" style="font-family:'Instrument Serif',serif; font-size:42px; line-height:1; color:#9E1F4F; text-decoration:none; letter-spacing:-0.01em;">the <span style="font-style:italic;">rested</span></a>
 <div class="v112-links" style="display:flex; flex-wrap:nowrap; white-space:nowrap; align-items:center; gap:14px 28px; font-family:'DM Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.14em;">
+<a href="#v4-bs" style="color:#1A1D24; text-decoration:none;">OUR&nbsp;COMMUNITY</a>
 <a href="#v4-community" style="color:#1A1D24; text-decoration:none;">WHY THIS&nbsp;EXISTS</a>
 <a href="#v4-how" style="color:#1A1D24; text-decoration:none;">HOW&nbsp;IT&nbsp;STARTED</a>
 <a href="#v4-who" style="color:#1A1D24; text-decoration:none;">IS&nbsp;THIS&nbsp;FOR&nbsp;YOU?</a>
-<a href="#v4-bs" style="color:#1A1D24; text-decoration:none;">OUR&nbsp;COMMUNITY</a>
 <a href="#v4-about" style="color:#1A1D24; text-decoration:none;">MEET&nbsp;EVIE</a>
 <a href="#v4-faq" style="color:#1A1D24; text-decoration:none;">FAQ</a>
 <a href="#v4-signup" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:0 22px; background:#9E1F4F; border:1.5px solid #1A1D24; border-radius:0; box-shadow:3px 3px 0 #1A1D24; color:#FFFFFF; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" filter="url(#v11-rough)"><path d="M12.4 4 C 15 4, 16.4 6, 16.2 8.3 C 16 10.6, 14.2 12.2, 12 12.1 C 9.6 12, 8 10.2, 8.1 7.9 C 8.2 5.6, 9.9 4, 12.8 4.3"></path><path d="M4.2 21 C 5.4 17.2, 8.2 15, 12 15.1 C 15.9 15.2, 18.7 17.4, 19.8 20.8"></path></svg><span>JOIN THE&nbsp;WAITLIST</span></a>
 </div>
 <div class="v112-mobile" style="display:none; align-items:center; gap:12px;"><a href="#v4-signup" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:0 22px; background:#9E1F4F; border:1.5px solid #1A1D24; border-radius:0; box-shadow:3px 3px 0 #1A1D24; color:#FFFFFF; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" filter="url(#v11-rough)"><path d="M12.4 4 C 15 4, 16.4 6, 16.2 8.3 C 16 10.6, 14.2 12.2, 12 12.1 C 9.6 12, 8 10.2, 8.1 7.9 C 8.2 5.6, 9.9 4, 12.8 4.3"></path><path d="M4.2 21 C 5.4 17.2, 8.2 15, 12 15.1 C 15.9 15.2, 18.7 17.4, 19.8 20.8"></path></svg><span>JOIN&nbsp;WAITLIST</span></a><button type="button" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" style="display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; padding:0; background:#FFFFFF; border:1.5px solid #1A1D24; cursor:pointer;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1D24" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" filter="url(#v11-rough)"><path d="M3.5 6.5 C 9 6, 15 6.2, 20.5 6"></path><path d="M3 12.2 C 9 11.8, 15 12.4, 21 12"></path><path d="M3.8 18 C 9 17.6, 15 18.1, 20.2 17.7"></path></svg></button></div>
 </nav>
-<div id="mobile-menu" hidden=""><div class="v112-drop" style="background:#FFFFFF; border-top:1.5px solid #1A1D24;"><a href="#v4-community" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">WHY THIS EXISTS</a><a href="#v4-how" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">HOW IT STARTED</a><a href="#v4-who" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">IS THIS FOR YOU?</a><a href="#v4-bs" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">OUR COMMUNITY</a><a href="#v4-about" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">MEET EVIE</a><a href="#v4-faq" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">FAQ</a><a href="#v4-signup" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em; border-bottom:none; color:#9E1F4F;">JOIN THE WAITLIST →</a></div></div>
+<div id="mobile-menu" hidden=""><div class="v112-drop" style="background:#FFFFFF; border-top:1.5px solid #1A1D24;"><a href="#v4-bs" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">OUR COMMUNITY</a><a href="#v4-community" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">WHY THIS EXISTS</a><a href="#v4-how" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">HOW IT STARTED</a><a href="#v4-who" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">IS THIS FOR YOU?</a><a href="#v4-about" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">MEET EVIE</a><a href="#v4-faq" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em;">FAQ</a><a href="#v4-signup" data-close-menu="" style="display:block; padding:16px 24px; border-bottom:1px solid #E6E0D6; color:#1A1D24; text-decoration:none; font-family:'DM Mono',monospace; font-weight:500; font-size:14px; letter-spacing:0.22em; border-bottom:none; color:#9E1F4F;">JOIN THE WAITLIST →</a></div></div>
 </header>
+
+<div style="font-family:'Inter',sans-serif; color:#1A1D24; background:#FFFFFF; overflow-x:clip;">
+
+
 
 <!-- ═══ 01 HERO · split layout, text left + polaroids right ═══ -->
 <section id="v4-top" style="position:relative; background:#F8F5EE; padding:64px 32px 72px;">
